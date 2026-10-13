@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung – PilzNavigator</title>
     <style>
@@ -23,52 +22,59 @@
 <body>
 
 <h1>Datenschutzerklärung für PilzNavigator</h1>
-<p class="stand">Stand: [09.07.2026]</p>
+<p class="stand">Stand: 13.10.2026</p>
 
 <h2>1. Verantwortlicher</h2>
 <p>
-    [Thomas Baumgartl]<br>
-    [Rechbergstraße 39, 79585 Steinen]<br>
-    E-Mail: [tbaumgartl@t-online.de]
+    Thomas Baumgartl<br>
+    Rechbergstraße 39, 79585 Steinen<br>
+    E-Mail: tbaumgartl@t-online.de
 </p>
 
 <h2>2. Übersicht: Welche Daten verarbeitet PilzNavigator?</h2>
 <p>
-    PilzNavigator ist so gebaut, dass möglichst wenig Daten das Gerät verlassen. Die meisten
-    Informationen (deine gespeicherten Funde, dein Profilname) werden <strong>ausschließlich lokal
-    auf deinem Gerät</strong> gespeichert und nirgendwo hochgeladen. Es gibt keine Benutzerkonten,
-    keine Registrierung und keine Werbung.
+    PilzNavigator ist so gebaut, dass möglichst wenig Daten dein Gerät verlassen. Du kannst die App
+    <strong>ohne Konto</strong> nutzen; deine gespeicherten Funde und dein Profil liegen dann
+    ausschließlich lokal auf deinem Gerät. Es gibt keine Werbung und kein Tracking.
 </p>
-<p>Folgende Daten werden dennoch verarbeitet:</p>
+<p>
+    Ein Konto ist freiwillig. Du brauchst es nur, wenn du das automatische Cloud-Backup nutzen oder
+    Käufe (Pro, Scan-Pakete) tätigen möchtest. Folgende Daten werden verarbeitet:
+</p>
 
 <h3>a) Standortdaten (GPS)</h3>
 <p>Die App fragt mit deiner Erlaubnis deinen Standort ab, um:</p>
 <ul>
     <li>das lokale Pilzwetter und die Pilzfund-Prognose für deine Umgebung anzuzeigen,</li>
-    <li>deinen Standort bei gespeicherten Pilzfunden zu hinterlegen (nur lokal auf deinem Gerät gespeichert),</li>
+    <li>deinen Standort bei gespeicherten Pilzfunden zu hinterlegen,</li>
     <li>dir die Position auf der Karte sowie die Luftlinien-Navigation zu einem gespeicherten Fund anzuzeigen.</li>
 </ul>
 <p>
     Für die Wetterdaten werden deine Koordinaten an den Wetterdienst <strong>Open-Meteo</strong>
-    (Schweiz, <a href="https://open-meteo.com">open-meteo.com</a>) übertragen. Open-Meteo erhält
+    (Schweiz, <a href="https://open-meteo.com/">open-meteo.com</a>) übertragen. Open-Meteo erhält
     dabei nur die Koordinaten, keine weiteren personenbezogenen Daten.
 </p>
 <p>
+    Fundorte werden auf deinem Gerät gespeichert. Nutzt du das Cloud-Backup (siehe unten), werden sie
+    zusammen mit deinen Funden ebenfalls in die Cloud gesichert.
     Du kannst den Standortzugriff jederzeit in den Einstellungen deines Geräts widerrufen; einzelne
     Funktionen (Wetter, Karte, Navigation) stehen dann nicht mehr zur Verfügung.
+    Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
 </p>
 
-<h3>b) Kamera und Fotos</h3>
+<h3>b) Kamera, Fotos und KI-Pilzbestimmung</h3>
 <p>
-    Zur Pilzbestimmung nimmst du mit der App-Kamera ein Foto auf. Dieses Foto wird zur Analyse an
-    <strong>Google Gemini</strong> (Google Ireland Limited bzw. Google LLC) übermittelt, um eine
-    KI-gestützte Artenschätzung zu erhalten. Es gelten die Datenschutzbestimmungen von Google:
+    Zur Pilzbestimmung nimmst du mit der App-Kamera ein Foto auf. Das Foto wird verschlüsselt an einen
+    von uns betriebenen Server (Google Cloud / Firebase, Region Frankfurt, Deutschland) und von dort
+    zur Analyse an <strong>Google Gemini</strong> (Google Ireland Limited bzw. Google LLC) übermittelt,
+    um eine KI-gestützte Artenschätzung zu erhalten. Der Server dient dabei als Vermittler, damit der
+    Schlüssel zum KI-Dienst nicht in der App liegt, und um dein Scan-Guthaben zu prüfen. Das Foto wird
+    von uns nicht gespeichert. Es gelten außerdem die Datenschutzbestimmungen von Google:
     <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
 </p>
 <p>
-    Aufgenommene Fotos werden nicht dauerhaft auf unseren (nicht vorhandenen) Servern gespeichert –
-    die App hat keinen eigenen Backend-Server. Das Foto verbleibt nach der Analyse nur lokal auf
-    deinem Gerät, sofern du den Fund speicherst.
+    Zur Missbrauchsvermeidung und zur Abrechnung des Scan-Guthabens speichern wir pro Nutzer-ID die
+    Anzahl der durchgeführten Scans (Art. 6 Abs. 1 lit. b und f DSGVO).
 </p>
 
 <h3>c) Kartendarstellung</h3>
@@ -79,32 +85,80 @@
     Google: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>
 </p>
 
-<h3>d) Lokal gespeicherte Daten</h3>
-<p>Folgende Daten verbleiben ausschließlich auf deinem Gerät und werden nicht an uns oder Dritte übertragen:</p>
+<h3>d) Konto und Anmeldung (freiwillig)</h3>
+<p>
+    Du kannst dich mit <strong>Apple</strong> oder <strong>Google</strong> anmelden. Die Anmeldung läuft
+    über <strong>Firebase Authentication</strong> (Google). Wir erhalten dabei eine eindeutige
+    Nutzer-ID sowie deine E-Mail-Adresse und ggf. deinen Namen, soweit du sie freigibst (bei Apple kann
+    eine anonymisierte Relay-E-Mail-Adresse verwendet werden). Ein Passwort wird von uns nicht
+    gespeichert. Auch ohne Anmeldung legt die App eine anonyme Nutzer-ID an, damit der KI-Dienst
+    technisch genutzt werden kann.
+</p>
+<p>Rechtsgrundlage: Vertragserfüllung bzw. Bereitstellung der gewünschten Funktionen (Art. 6 Abs. 1 lit. b DSGVO).</p>
+
+<h3>e) Cloud-Backup (nur mit Konto)</h3>
+<p>
+    Wenn du angemeldet bist, sichert die App deine Daten automatisch in unsere Cloud-Datenbank
+    (Google Firebase / Firestore, Region Frankfurt, Deutschland), damit du sie nach einer Neuinstallation
+    oder auf einem neuen Gerät wiederherstellen kannst. Gesichert werden:
+</p>
 <ul>
-    <li>gespeicherte Pilzfunde (Art, Zeitpunkt, Standort)</li>
-    <li>dein selbst gewählter Anzeigename</li>
-    <li>die Bestätigung des Sicherheitshinweises samt Zeitstempel</li>
+    <li>deine gespeicherten Funde (z. B. Art, Zeitpunkt und <strong>Fundort / GPS-Koordinaten</strong>),</li>
+    <li>aufgezeichnete Touren,</li>
+    <li>Level, freigeschaltete Ausrüstung und Statistik,</li>
+    <li>Profilangaben (Anzeigename, Gewicht für die Kalorienschätzung).</li>
 </ul>
 <p>
-    Diese Daten werden gelöscht, wenn du die App deinstallierst, oder können in der App selbst über
-    "Alle Funde löschen" entfernt werden.
+    Die Daten werden verschlüsselt übertragen und gespeichert; der Zugriff ist nur über deine
+    Nutzer-ID möglich. Wir lesen deine Backup-Inhalte nicht aus. Das Backup bleibt gespeichert, bis du
+    es löschst (siehe Abschnitt 4). Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (gewünschte Funktion).
 </p>
 
-<h2>3. Keine Weitergabe an sonstige Dritte</h2>
+<h3>f) Käufe, Pro und Scan-Guthaben</h3>
 <p>
-    Über die genannten Dienste (Open-Meteo, Google Gemini, Google Maps) hinaus geben wir keine Daten
-    an Dritte weiter. Es findet kein Tracking zu Werbezwecken statt, es sind keine Analyse- oder
-    Werbe-SDKs in der App enthalten.
+    Käufe (Pro-Freischaltung, Scan-Pakete, früheres Jahresabo) werden über den <strong>Apple App Store</strong>
+    bzw. <strong>Google Play</strong> abgewickelt. Zahlungsdaten (Kreditkarte, Bankverbindung usw.)
+    erhalten wir nicht. Zur Freischaltung prüft unser Server den Kauf bei Apple bzw. Google und speichert
+    dazu eine Kaufkennung (Transaktions-ID bzw. Token), dein Scan-Guthaben, die Pro-Freischaltung und ggf.
+    das Ablaufdatum eines Abos, jeweils verknüpft mit deiner Nutzer-ID. So kannst du deine Käufe auf
+    anderen Geräten wiederherstellen und sie können nicht mehrfach verwendet werden.
+    Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO; gesetzliche Aufbewahrungspflichten bleiben unberührt.
 </p>
 
-<h2>4. Deine Rechte</h2>
+<h3>g) Lokal gespeicherte Daten</h3>
+<p>Auf deinem Gerät werden gespeichert (und ohne Konto nicht an uns übertragen):</p>
+<ul>
+    <li>gespeicherte Pilzfunde (Art, Zeitpunkt, Standort),</li>
+    <li>dein selbst gewählter Anzeigename und weitere Profil- und App-Einstellungen,</li>
+    <li>die Bestätigung des Sicherheitshinweises samt Zeitstempel.</li>
+</ul>
 <p>
-    Da personenbezogene Daten (Standort, Fotos) nur an die genannten Drittanbieter zur unmittelbaren
-    Verarbeitung übertragen und nicht bei uns gespeichert werden, betreffen Auskunfts-,
-    Berichtigungs- und Löschungsansprüche in erster Linie diese Anbieter direkt. Für die lokal auf
-    deinem Gerät gespeicherten Daten hast du jederzeit selbst die volle Kontrolle (Löschen in der App
-    oder Deinstallation).
+    Diese Daten werden gelöscht, wenn du die App deinstallierst, oder können in der App selbst
+    entfernt werden (z. B. "Alle Funde löschen").
+</p>
+
+<h2>3. Weitergabe an Dritte</h2>
+<p>
+    Über die genannten Dienste (Google Firebase / Google Cloud, Google Gemini, Google Maps,
+    Open-Meteo, Apple App Store, Google Play) hinaus geben wir keine Daten an Dritte weiter. Es findet
+    kein Tracking zu Werbezwecken statt, es sind keine Analyse- oder Werbe-SDKs in der App enthalten.
+    Bei Google kann eine Verarbeitung auch in den USA erfolgen; Google stützt die Übermittlung auf
+    EU-Standardvertragsklauseln bzw. den EU-US Data Privacy Framework.
+</p>
+
+<h2>4. Deine Rechte und Löschung</h2>
+<p>
+    Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
+    Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde
+    zu beschweren. Erteilte Einwilligungen (z. B. Standort) kannst du jederzeit mit Wirkung für die
+    Zukunft widerrufen.
+</p>
+<p>
+    <strong>Konto und Daten löschen:</strong> In der App unter <em>Profil → Konto → Konto löschen</em>.
+    Dabei werden dein Cloud-Backup, deine Kaufzuordnungen und Guthaben, die Nutzerdaten auf unserem
+    Server und dein Konto gelöscht. Bereits getätigte Käufe und nicht verbrauchtes Guthaben gehen dabei
+    verloren. Du kannst die Löschung auch per E-Mail an die oben genannte Adresse anfordern.
+    Lokale Daten auf deinem Gerät entfernst du durch Löschen in der App oder Deinstallation.
 </p>
 <p>Bei Fragen zum Datenschutz kannst du dich jederzeit unter der oben genannten E-Mail-Adresse an uns wenden.</p>
 
@@ -114,5 +168,5 @@
     rechtlichen Anforderungen ändern. Die jeweils aktuelle Version findest du unter dieser Seite.
 </p>
 
-</body>
-</html>
+
+</body></html>
